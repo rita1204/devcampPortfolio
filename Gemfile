@@ -32,9 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,3 +56,5 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'sprockets', '~> 3.7.2'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+gem 'bootstrap', '~> 4.1.1'
+
