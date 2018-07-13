@@ -3,11 +3,12 @@ module PortfoliosHelper
     "http://via.placeholder.com/#{height}x#{width}"
   end
   def portfolio_img img, type
-    if img
-      img
+    # byebug
+    if img.model.main_image? || img.model.thumb_image?
+      img.url.to_s
     elsif type == 'thumb'
       image_generator(height: '350', width: '200')
-    else
+    elsif type == 'main'
       image_generator(height: '600', width: '400')
     end
   end
