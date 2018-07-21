@@ -27,16 +27,16 @@ module ApplicationHelper
         title: 'About me'
       },
       {
-        url: contact_path,
-        title: 'Contact'
-      },
-      {
         url: blogs_path,
         title: 'Blog'
       },
       {
         url: portfolios_path,
         title: 'Portfolio'
+      },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
       }
     ]
   end
